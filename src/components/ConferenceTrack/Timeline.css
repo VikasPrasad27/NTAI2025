@@ -1,0 +1,57 @@
+.timeline {
+    position: relative;
+    padding-left: 30px; /* Space for the vertical line */
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 60px; /* Increased margin for better spacing */
+    text-align:center; /* Align text to left */
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: -10px; /* Positioning dot to the left of the line */
+    top: calc(50% - 6px); /* Centering dot vertically */
+    width: 12px; /* Dot size */
+    height: 12px; /* Dot size */
+    background-color: #3b82f6; /* Tailwind blue-600 */
+    border-radius: 50%; /* Make it circular */
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -5px; /* Positioning vertical line */
+    top: -20px; /* Adjusted to start above the first item */
+    height: calc(100% + 20px);
+    width: 2px;
+    background-color: #e2e8f0; /* Tailwind gray-300 */
+  }
+  
+  .timeline-title {
+    font-size: 1.5rem; /* Larger font size for titles */
+    font-weight: bold;
+    color: #3b82f6; /* Tailwind blue-600 */
+  }
+  
+  .timeline-content {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0; /* Remove padding */
+  }
+  
+  .timeline-topic {
+    margin-bottom: .5rem; /* Space between topics */
+    color: #4a5568; /* Tailwind gray-700 */
+  }
+  
+  .timeline-topic:hover {
+    color: #3b82f6; /* Tailwind blue-600 on hover */
+  }
+  
+  /* Add shadow effect to each item */
+  .timeline-item:hover .timeline-title,
+  .timeline-item:hover .timeline-topic {
+    text-shadow: rgba(0,0,0,0.1) 0px 1px 5px; /* Subtle shadow on hover */
+  }
+  

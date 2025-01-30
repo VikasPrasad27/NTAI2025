@@ -1,0 +1,89 @@
+.objective-container {
+    background-color: #1a202c; /* Dark background */
+    padding: 2rem 1rem;
+}
+
+.objective-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.objective-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 1.5rem;
+}
+
+.objective-card {
+    background-color: #2d3748; /* Card background */
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.objective-card.hovered {
+    transform: scale(1.05);
+}
+
+.objective-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.objective-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.objective-card-description {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.current-date {
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Gradient backgrounds */
+.blue-gradient {
+    background-image: linear-gradient(to right, #63b3ed, #4299e1);
+}
+
+.purple-gradient {
+    background-image: linear-gradient(to right, #a855f7, #6b46c1);
+}
+
+.yellow-gradient {
+    background-image: linear-gradient(to right, #f6e05e, #ecc94b);
+}
+
+.green-gradient {
+    background-image: linear-gradient(to right, #68d391, #48bb78);
+}
+
+.red-gradient {
+    background-image: linear-gradient(to right, #fc8181, #f56565);
+}
+
+.indigo-gradient {
+    background-image: linear-gradient(to right, #667eea, #63b3ed);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) { /* For tablets and smaller devices */
+    .objective-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+}
+
+@media (max-width: 480px) { /* For mobile devices */
+    .objective-grid {
+        grid-template-columns: repeat(1, 1fr); /* One column */
+    }
+}
