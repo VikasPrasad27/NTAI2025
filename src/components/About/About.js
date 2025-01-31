@@ -44,7 +44,7 @@ export default function About () {
             <img className="shape3 w-25" src={Shape4} alt="Shape3"/>
             <img className="shape4 w-25" src={Shape3} alt="Shape4"/>
             <img className="ConferenceTracks w-25" src={ConferenceTracks} alt="ConferenceTracksImg"/>
-            <img className="ImportantDates w-25" style={{width: 50}} src={ImportantDates} alt="ImportantDatesImg"/>
+            
 
             <section id="ICLVE-2023">
                 <div className="row">
@@ -73,10 +73,10 @@ export default function About () {
             </section>
 
             <section id="CONFERENCE_TRACKS">
-                <div className="row mt-5  justify-content-center">
+                <div className="row mt-5 justify-content-center">
                     <div className="col-12 col-md-8 text-center">
                         <h3 className="text-uppercase mt-5">Conference Tracks</h3>
-                        <div className="p-tracks align-self-center">
+                        <div className="p-tracks  text-center">
                             <p className="p-text">Artificial Intelligence and Machine Learning</p>
                             <p className="p-text">Information Technology and Cybersecurity</p>
                             <p className="p-text">Advanced Computing and Emerging Technologies </p>
