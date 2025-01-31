@@ -17,6 +17,7 @@ import DarshanaDesai from '../../assets/images/Committee/darshanadesai.jpg';
 import ArchanaSalve from '../../assets/images/Committee/archanasavle.jpg';
 import AwantikaBijwe from '../../assets/images/Committee/AwantikaB.jpg';
 import DeepaJamnik from '../../assets/images/Committee/Deepajamnik.jpg';
+
 const Committee = () => {
   // Advisory Committee data
   const advisoryCommittee = [
@@ -46,7 +47,6 @@ const Committee = () => {
     { name: 'Dr. Deepa Jamnik', title: 'HOD, BBA-MBA Integrated, ICEM, Pune', image: DeepaJamnik },
   ];
 
-  // Render the committee sections
   return (
     <div className="d-flex flex-column justify-content-center align-items-center">
       <h1 className="mt-5 text-center">NTAI25 Committee</h1>
@@ -58,13 +58,17 @@ const Committee = () => {
         </div>
         <div className="d-flex justify-content-center flex-wrap">
           {advisoryCommittee.map((member, index) => (
-            <div key={index} className="col-lg-4 col-md-6 mb-4">
-              <div className="card shadow h-80  p-3 m-2">
+            <div key={index} className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="card shadow h-100 p-3 m-2">
                 <img
                   src={member.image}
                   className="card-img-top"
                   alt={member.name}
-                  style={{ width: '420px', height: '400px', objectFit: 'cover' }}
+                  style={{
+                    width: '100%',
+                    height: '300px',
+                    objectFit: 'cover',
+                  }}
                 />
                 <div className="card-body">
                   <h5 className="card-title">{member.name}</h5>
@@ -83,13 +87,17 @@ const Committee = () => {
         </div>
         <div className="d-flex justify-content-center flex-wrap">
           {programChairs.map((chair, index) => (
-            <div key={index} className="col-lg-4 col-md-6 mb-4">
+            <div key={index} className="col-lg-3 col-md-4 col-sm-6 mb-4">
               <div className="card shadow h-100 p-3 m-2">
                 <img
                   src={chair.image}
                   className="card-img-top"
                   alt={chair.name}
-                  style={{ width: '400px', height: '450px', objectFit: 'cover' }}
+                  style={{
+                    width: '100%',
+                    height: '300px',
+                    objectFit: 'cover',
+                  }}
                 />
                 <div className="card-body">
                   <h5 className="card-title">{chair.name}</h5>
@@ -108,13 +116,17 @@ const Committee = () => {
         </div>
         <div className="d-flex justify-content-center flex-wrap">
           {organisingCommittee.map((member, index) => (
-            <div key={index} className="col-lg-4 col-md-6 mb-4">
+            <div key={index} className="col-lg-3 col-md-4 col-sm-6 mb-4">
               <div className="card shadow h-100 p-3 m-2">
                 <img
                   src={member.image}
                   className="card-img-top"
                   alt={member.name}
-                  style={{ width: '400px', height: '450px', objectFit: 'cover' }}
+                  style={{
+                    width: '100%',
+                    height: '250px',
+                    objectFit: 'cover',
+                  }}
                 />
                 <div className="card-body">
                   <h5 className="card-title">{member.name}</h5>
