@@ -33,13 +33,14 @@ npm start
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-!(./src/assets/images/ntaihome.png)
+![Home Page](./src/assets/images/ntaihome.png)
 
 ### 🗓️ Track Page
-!(./src/assets/images/ntaitrack.png)
+![Track Page](./src/assets/images/ntaitrack.png)
 
-### 🧑‍🏫 Speakers Page
-!(./src/assets/images/ntaiob.png)
+### 🧑‍🏫 Objectives Page
+![Objectives Page](./src/assets/images/ntaiob.png)
+
 
 ## Designed and Developed By : Vikas Prasad
 
